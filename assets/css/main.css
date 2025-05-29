@@ -1018,7 +1018,7 @@ section,
   clip-path: inset(0);
 }
 
-.call-to-action img {
+.call-to-action > img {
   position: fixed;
   top: 0;
   left: 0;
@@ -1028,6 +1028,15 @@ section,
   object-fit: cover;
   z-index: 1;
 }
+
+.logo-img-cta {
+  max-height: 32px;
+  margin-right: 8px;
+  vertical-align: middle;
+  position: static; /* Asegura que no se quede pegada al fondo */
+  z-index: 10;      /* Para estar por encima de la imagen de fondo */
+}
+
 
 .call-to-action:before {
   content: "";
